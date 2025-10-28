@@ -9,13 +9,16 @@ body { margin: 0; font-family: 'Poppins', sans-serif; background-color: #f4fdfc;
     header {
   background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
                   url('Untitled design.png');
-  background-size: cover;
-  background-color: #008080;
-  color: white;
-  padding: 50px 20px;
-  text-align: center;
-  position: relative;
-  height: 400px;
+        background-size: cover;            /* Ensures the logo fills the screen */
+      background-position: center;       /* Centers the logo */
+      background-repeat: no-repeat;      /* Prevents tiling */
+      height: 100vh;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
     }
     nav {
       background-color: #006666;
@@ -125,6 +128,7 @@ body { margin: 0; font-family: 'Poppins', sans-serif; background-color: #f4fdfc;
   </footer>
 </body>
 </html>
+
 
 
 
